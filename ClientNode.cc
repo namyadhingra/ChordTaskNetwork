@@ -1,3 +1,7 @@
+// ClientNode.cc - Implements a peer-to-peer client node in a Chord-based distributed system
+// Handles task distribution, result aggregation, and gossip message propagation
+// Features: O(logN) message routing, distributed task processing, gossip-based consensus
+
 #include "ClientNode.h"
 #include <fstream>
 #include <algorithm>
@@ -8,15 +12,18 @@ using namespace chord;
 
 Define_Module(ClientNode);
 
+// Initialize the client node: set parameters, load config, and schedule first task
 void ClientNode::initialize()
 {
+    // Get node ID and network size
     myId = par("clientId").intValue();
     N = getParentModule()->par("N").intValue();
     
-    numTasksReceived = 0;
-    overallMax = -1;
-    uniqueGossips = 0;
-    terminated = false;
+    // Initialize task tracking variables
+    numTasksReceived = 0;      // Counter for received results
+    overallMax = -1;           // Track maximum value across all subtasks
+    uniqueGossips = 0;         // Count of unique gossip messages received
+    terminated = false;        // Flag indicating node has received all gossips
     
     x = 20; 
     k = 100;
@@ -42,6 +49,7 @@ void ClientNode::initialize()
     scheduleAt(simTime() + uniform(0, 1.0), initTimer);
 }
 
+// Log messages to both console and output file
 void ClientNode::logOutput(std::string text)
 {
     EV << text << "\n";
@@ -49,51 +57,59 @@ void ClientNode::logOutput(std::string text)
     out << text << "\n";
     out.close();
 }
-
+// Initiate a task: divide array into x subtasks and route each to target client
 void ClientNode::initiateTask()
 {
     logOutput("Node " + std::to_string(myId) + " initiating task, splitting " + std::to_string(k) + " elements into " + std::to_string(x) + " parts.");
     
-    int elementsPerTask = k / x;
-    int remaining = k % x;
+    // Divide k elements approximately equally among x subtaskslogOutput("Node " + std::to_string(myId) + " initiating task, splitting " + std::to_string(k) + " elements into " + std::to_string(x) + " parts.");
     
+    int elementsPerTask = k / x;
+    // Create and send x subtasks
     for (int i = 0; i < x; ++i) {
         ChordAppMsg *msg = new ChordAppMsg("TaskMsg");
         msg->setMsgType(TASK_MSG);
         msg->setSourceId(myId);
+        
+        // Route subtask i to node (i % N) using Chord routing
         int destTarget = i % N;
         msg->setDestId(destTarget);
         msg->setInitiatorId(myId);
+        msg->setSubtaskId(i);
+        
+        // Distribute data elements: some subtasks get one extra if k is not divisible by xmsg->setInitiatorId(myId);
         msg->setSubtaskId(i);
         
         int count = elementsPerTask + (i < remaining ? 1 : 0);
         msg->setDataArraySize(count);
         for (int c = 0; c < count; ++c) {
             msg->setData(c, intuniform(1, 1000));
-        }
-        
-        routeMessage(destTarget, msg);
-    }
-}
-
+// Route a message towards destination using greedy Chord routing
+// Selects neighbor closest to destination in ring topology
 void ClientNode::routeMessage(int destId, ChordAppMsg *msg)
 {
+    // If destination is self, deliver immediately
     if (myId == destId) {
         scheduleAt(simTime(), msg);
         return;
     }
     
+    // Calculate distance to destination in ring
     int bestDist = (destId - myId + N) % N;
     int bestGateIndex = -1;
     int maxNDist = -1;
     
+    // Find neighbor that is closest to destination (greedy routing)
     for (int g = 0; g < gateSize("port"); ++g) {
         cGate *outGate = gate("port$o", g);
         if (outGate->isConnected()) {
             cModule *neighbor = outGate->getPathEndGate()->getOwnerModule();
             int neighborId = neighbor->par("clientId").intValue();
             
+            // Distance from this node to neighbor
             int nDist = (neighborId - myId + N) % N;
+            
+            // Select neighbor that moves closest to destination without overshooting
             if (nDist > 0 && nDist <= bestDist) {
                 if (nDist > maxNDist) {
                     maxNDist = nDist;
@@ -103,18 +119,15 @@ void ClientNode::routeMessage(int destId, ChordAppMsg *msg)
         }
     }
     
+    // Send message to selected neighbor
     if (bestGateIndex != -1) {
-        msg->setSourceId(myId); // Distance routing hop
-        send(msg, "port$o", bestGateIndex);
-    } else {
-        EV << "Warning: Node " << myId << " failed to route towards " << destId << ". Dropping msg.\n";
-        delete msg;
-    }
-}
-
+        msg->setSourceId(myId);
+// Handle incoming task message: compute local max and send result back to initiator
 void ClientNode::handleTaskMsg(ChordAppMsg *msg)
 {
+    // If this node is the destination, process the subtask
     if (myId == msg->getDestId()) {
+        // Find maximum value in the assigned data array
         int localMax = -1;
         int dataSize = msg->getDataArraySize();
         for (int i = 0; i < dataSize; ++i) {
@@ -125,6 +138,7 @@ void ClientNode::handleTaskMsg(ChordAppMsg *msg)
         logOutput("Node " + std::to_string(myId) + " computed local max " + std::to_string(localMax) + 
                   " for subtask " + std::to_string(msg->getSubtaskId()) + " from initiator " + std::to_string(msg->getInitiatorId()));
         
+        // Create and route result message back to initiator
         ChordAppMsg *res = new ChordAppMsg("ResultMsg");
         res->setMsgType(RESULT_MSG);
         res->setInitiatorId(msg->getInitiatorId());
@@ -136,22 +150,28 @@ void ClientNode::handleTaskMsg(ChordAppMsg *msg)
         routeMessage(res->getDestId(), res);
         delete msg;
     } else {
-        routeMessage(msg->getDestId(), msg);
-    }
-}
-
+        // Not the destination, forward the messageutput("Node " + std::to_string(myId) + " computed local max " + std::to_string(localMax) + 
+                  " for subtask " + std::to_string(msg->getSubtaskId()) + " from initiator " + std::to_string(msg->getInitiatorId()));
+        
+        ChordAppMsg *res = new ChordAppMsg("ResultMsg");
+// Handle result message: aggregate results and initiate gossip when all results received
 void ClientNode::handleResultMsg(ChordAppMsg *msg)
 {
+    // If this node is the task initiator, aggregate the result
     if (myId == msg->getDestId()) { 
         numTasksReceived++;
         int val = msg->getMaxResult();
+        
+        // Track overall maximum across all subtasks
         if (val > overallMax) overallMax = val;
         
         logOutput("Node " + std::to_string(myId) + " received result " + std::to_string(val) + " for subtask " + std::to_string(msg->getSubtaskId()));
         
+        // When all results received, task is complete - initiate gossip protocol
         if (numTasksReceived == x) {
             logOutput("Task Complete on Node " + std::to_string(myId) + ". Conclusive Max: " + std::to_string(overallMax));
             
+            // Create gossip message with timestamp and send to neighbors
             ChordAppMsg *gMsg = new ChordAppMsg("GossipMsg");
             gMsg->setMsgType(GOSSIP_MSG);
             gMsg->setGossipOriginIP(myId);
@@ -163,21 +183,31 @@ void ClientNode::handleResultMsg(ChordAppMsg *msg)
         }
         delete msg;
     } else {
-        routeMessage(msg->getDestId(), msg);
-    }
-}
-
+        // Not the initiator, forward the result message
+        if (numTasksReceived == x) {
+            logOutput("Task Complete on Node " + std::to_string(myId) + ". Conclusive Max: " + std::to_string(overallMax));
+            
+            ChordAppMsg *gMsg = new ChordAppMsg("GossipMsg");
+            gMsg->setMsgType(GOSSIP_MSG);
+            gMsg->setGossipOriginIP(myId);
+// Handle gossip message: track unique gossips and propagate using flooding (except backward)
 void ClientNode::handleGossipMsg(ChordAppMsg *msg)
 {
+    // Create unique identifier for this gossip message using origin and original timestamp
     std::pair<int, double> hashM = std::make_pair(msg->getGossipOriginIP(), msg->getGossipTimestamp());
     
+    // Check if this is a new gossip message (not seen before)
     if (receivedGossips.find(hashM) == receivedGossips.end()) {
         receivedGossips.insert(hashM);
         uniqueGossips++;
         
-        logOutput("Node " + std::to_string(myId) + " recvd GOSSIP IP:192.168.0." + std::to_string(msg->getGossipOriginIP()) + 
-                  " TS:" + std::to_string(msg->getGossipTimestamp()) + " FROM:" + std::to_string(msg->getSourceId()));
+        // Log record: format <localTimestamp>:<originIP>:<clientID>
+        // Using local timestamp (simTime()) of when this node receives the gossip
+        logOutput("Node " + std::to_string(myId) + " recvd GOSSIP <" + std::to_string(simTime().dbl()) + ">:<192.168.0." + 
+                  std::to_string(msg->getGossipOriginIP()) + ">:<" + std::to_string(msg->getGossipClientId()) + ">" +
+                  " FROM:" + std::to_string(msg->getSourceId()));
         
+        // Check if node has received gossips from all N nodes
         if (uniqueGossips == N) {
             logOutput("Node " + std::to_string(myId) + " received gossips from all N nodes. Terminating.");
             terminated = true;
@@ -185,6 +215,7 @@ void ClientNode::handleGossipMsg(ChordAppMsg *msg)
             return;
         }
         
+        // Propagate gossip to all neighbors except the sender (standard gossip protocol)
         int senderId = msg->getSourceId();
         
         for (int g = 0; g < gateSize("port"); ++g) {
@@ -193,13 +224,30 @@ void ClientNode::handleGossipMsg(ChordAppMsg *msg)
                 cModule *neighbor = outGate->getPathEndGate()->getOwnerModule();
                 int neighborId = neighbor->par("clientId").intValue();
                 
-                if (neighborId != senderId) {
-                    ChordAppMsg *dup = msg->dup();
-                    dup->setSourceId(myId);
-                    send(dup, "port$o", g);
-                }
-            }
+                // Forward to all neighbors except sender (prevents loops)inated = true;
+            delete msg;
+            return;
         }
+        
+        int senderId = msg->getSourceId();
+        
+        for (int g = 0; g < gateSize("port"); ++g) {
+            cGate *outGate = gate("port$o", g);
+// Main message handler: routes messages to appropriate handlers based on type
+void ClientNode::handleMessage(cMessage *msg)
+{
+    // Ignore messages after node has terminated
+    if (terminated) {
+        delete msg;
+        return;
+    }
+    
+    // Handle self-messages (scheduled tasks)
+    if (msg->isSelfMessage() && std::string(msg->getName()) == "startTask") {
+        initiateTask();
+        delete msg;
+    } else {
+        // Route application messages to appropriate handler
     }
     
     delete msg;
