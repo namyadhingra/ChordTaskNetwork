@@ -4,7 +4,6 @@
 #include <string>
 
 using namespace omnetpp;
-using namespace chord;
 
 class Coordinator : public cSimpleModule
 {
@@ -47,6 +46,7 @@ void Coordinator::initialize(int stage)
             cDelayChannel *ch1 = cDelayChannel::create("channel");
             ch1->setDelay(0.01);
             uOut->connectTo(vIn, ch1);
+            ch1->callInitialize();
 
             // v -> u
             cGate *vOut = modV->getOrCreateFirstUnconnectedGate("port$o", 0, false, true);
@@ -54,6 +54,7 @@ void Coordinator::initialize(int stage)
             cDelayChannel *ch2 = cDelayChannel::create("channel");
             ch2->setDelay(0.01);
             vOut->connectTo(uIn, ch2);
+            ch2->callInitialize();
         }
         topoFile.close();
     }

@@ -1,0 +1,731 @@
+version 3
+run General-0-20260414-17:47:29-23511
+attr configname General
+attr datetime 20260414-17:47:29
+attr datetimef 20260414-174729
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ChordNetwork
+attr processid 23511
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network ChordNetwork
+config record-eventlog false
+config cmdenv-express-mode true
+config *.N 16
+
+par ChordNetwork.client[0].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[0].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[0].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[0].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[0].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[0].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[0].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[0].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[0].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[1].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[1].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[1].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[2].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[2].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[2].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[0].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[0].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[0].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[3].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[3].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[3].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[4].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[4].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[4].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[5].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[5].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[5].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[6].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[6].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[6].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[1].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[1].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[7].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[7].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[7].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[8].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[8].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[8].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[9].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[9].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[9].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[2].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[2].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[10].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[10].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[10].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[3].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[3].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[11].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[11].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[11].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[12].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[12].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[12].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[4].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[4].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[4].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[13].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[13].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[13].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[5].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[5].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[5].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[14].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[14].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[14].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.client[15].port$o[6].channel typename "\"ned.DelayChannel\""
+par ChordNetwork.client[15].port$o[6].channel disabled false
+attr mutable ""
+par ChordNetwork.client[15].port$o[6].channel delay 0.01s
+attr mutable ""
+attr unit s
+par ChordNetwork.coordinator typename "\"Coordinator\""
+par ChordNetwork.client[0] typename "\"ClientNode\""
+par ChordNetwork.client[0] clientId 0
+par ChordNetwork.client[1] typename "\"ClientNode\""
+par ChordNetwork.client[1] clientId 1
+par ChordNetwork.client[2] typename "\"ClientNode\""
+par ChordNetwork.client[2] clientId 2
+par ChordNetwork.client[3] typename "\"ClientNode\""
+par ChordNetwork.client[3] clientId 3
+par ChordNetwork.client[4] typename "\"ClientNode\""
+par ChordNetwork.client[4] clientId 4
+par ChordNetwork.client[5] typename "\"ClientNode\""
+par ChordNetwork.client[5] clientId 5
+par ChordNetwork.client[6] typename "\"ClientNode\""
+par ChordNetwork.client[6] clientId 6
+par ChordNetwork.client[7] typename "\"ClientNode\""
+par ChordNetwork.client[7] clientId 7
+par ChordNetwork.client[8] typename "\"ClientNode\""
+par ChordNetwork.client[8] clientId 8
+par ChordNetwork.client[9] typename "\"ClientNode\""
+par ChordNetwork.client[9] clientId 9
+par ChordNetwork.client[10] typename "\"ClientNode\""
+par ChordNetwork.client[10] clientId 10
+par ChordNetwork.client[11] typename "\"ClientNode\""
+par ChordNetwork.client[11] clientId 11
+par ChordNetwork.client[12] typename "\"ClientNode\""
+par ChordNetwork.client[12] clientId 12
+par ChordNetwork.client[13] typename "\"ClientNode\""
+par ChordNetwork.client[13] clientId 13
+par ChordNetwork.client[14] typename "\"ClientNode\""
+par ChordNetwork.client[14] clientId 14
+par ChordNetwork.client[15] typename "\"ClientNode\""
+par ChordNetwork.client[15] clientId 15
+par ChordNetwork typename "\"ChordNetwork\""
+par ChordNetwork N 16
+
