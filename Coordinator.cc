@@ -4,6 +4,7 @@
 #include <string>
 
 using namespace omnetpp;
+using namespace chord;
 
 class Coordinator : public cSimpleModule
 {
