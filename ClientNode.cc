@@ -38,6 +38,12 @@ void ClientNode::initialize()
         config.close();
     }
     
+    // Validate constraint: k/x >= 2 (each subtask must have at least 2 elements)
+    if (k < 2 * x) {
+        throw cRuntimeError("Configuration error: k must be >= 2*x. Current k=%d, x=%d (k/x=%d)", 
+                           k, x, k/x);
+    }
+    
     // Clear output file at init for node 0 to avoid appending ad infinitum
     if (myId == 0) {
         std::ofstream out("outputfile.txt", std::ios_base::trunc);
