@@ -4,6 +4,8 @@
 #include <string>
 #include <iostream>
 
+using namespace chord;
+
 Define_Module(ClientNode);
 
 void ClientNode::initialize()
@@ -65,11 +67,10 @@ void ClientNode::initiateTask()
         msg->setSubtaskId(i);
         
         int count = elementsPerTask + (i < remaining ? 1 : 0);
-        IntVector dataVec;
+        msg->setDataArraySize(count);
         for (int c = 0; c < count; ++c) {
-            dataVec.push_back(intuniform(1, 1000));
+            msg->setData(c, intuniform(1, 1000));
         }
-        msg->setData(dataVec);
         
         routeMessage(destTarget, msg);
     }
@@ -115,9 +116,10 @@ void ClientNode::handleTaskMsg(ChordAppMsg *msg)
 {
     if (myId == msg->getDestId()) {
         int localMax = -1;
-        const IntVector& data = msg->getData();
-        for (size_t i = 0; i < data.size(); ++i) {
-            if (data[i] > localMax) localMax = data[i];
+        int dataSize = msg->getDataArraySize();
+        for (int i = 0; i < dataSize; ++i) {
+            int value = msg->getData(i);
+            if (value > localMax) localMax = value;
         }
         
         logOutput("Node " + std::to_string(myId) + " computed local max " + std::to_string(localMax) + 

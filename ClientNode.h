@@ -8,6 +8,7 @@
 #include "ChordAppMsg_m.h"
 
 using namespace omnetpp;
+using namespace chord;
 
 class ClientNode : public cSimpleModule
 {
