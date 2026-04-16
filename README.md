@@ -18,7 +18,7 @@ cd ~/Projects/ChordTaskNetwork
 python3 generate_topo.py 16
 
 # 4. Build (first time only)
-opp_makemake -f --deep -e Chord-Task-Network
+opp_makemake -f
 make
 ```
 

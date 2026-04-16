@@ -11,25 +11,25 @@ Node 14 computed local max 871 for subtask 14 from initiator 15
 Node 0 computed local max 939 for subtask 16 from initiator 15
 Node 1 computed local max 965 for subtask 17 from initiator 15
 Node 3 computed local max 847 for subtask 19 from initiator 15
-Node 15 received result 706 for subtask 0
-Node 15 received result 850 for subtask 1
 Node 2 computed local max 846 for subtask 2 from initiator 15
-Node 15 received result 977 for subtask 3
 Node 4 computed local max 851 for subtask 4 from initiator 15
 Node 5 computed local max 985 for subtask 5 from initiator 15
-Node 15 received result 698 for subtask 7
 Node 8 computed local max 715 for subtask 8 from initiator 15
 Node 9 computed local max 883 for subtask 9 from initiator 15
-Node 15 received result 757 for subtask 11
 Node 12 computed local max 618 for subtask 12 from initiator 15
-Node 15 received result 1000 for subtask 13
 Node 15 received result 871 for subtask 14
+Node 2 computed local max 973 for subtask 18 from initiator 15
+Node 15 received result 706 for subtask 0
+Node 15 received result 850 for subtask 1
+Node 15 received result 977 for subtask 3
+Node 6 computed local max 962 for subtask 6 from initiator 15
+Node 15 received result 698 for subtask 7
+Node 10 computed local max 933 for subtask 10 from initiator 15
+Node 15 received result 757 for subtask 11
+Node 15 received result 1000 for subtask 13
 Node 15 received result 939 for subtask 16
 Node 15 received result 965 for subtask 17
-Node 2 computed local max 973 for subtask 18 from initiator 15
 Node 15 received result 847 for subtask 19
-Node 6 computed local max 962 for subtask 6 from initiator 15
-Node 10 computed local max 933 for subtask 10 from initiator 15
 Node 15 received result 846 for subtask 2
 Node 15 received result 985 for subtask 5
 Node 15 received result 883 for subtask 9
@@ -40,22 +40,22 @@ Node 15 received result 962 for subtask 6
 Node 15 received result 715 for subtask 8
 Node 15 received result 933 for subtask 10
 Task Complete on Node 15. Conclusive Max: 1000
-Node 15 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 0 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 1 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 3 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 7 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 11 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 13 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 14 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:15
-Node 2 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:0
-Node 4 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:0
-Node 8 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:0
-Node 12 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:0
-Node 5 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:1
-Node 9 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:1
-Node 6 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:7
-Node 10 recvd GOSSIP IP:192.168.0.15 TS:0.106713 FROM:11
+Node 15 recvd GOSSIP <0.106713>:<15>:<15> FROM:15
+Node 0 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 1 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 3 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 7 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 11 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 13 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 14 recvd GOSSIP <0.116713>:<15>:<15> FROM:15
+Node 2 recvd GOSSIP <0.126713>:<15>:<15> FROM:0
+Node 4 recvd GOSSIP <0.126713>:<15>:<15> FROM:0
+Node 8 recvd GOSSIP <0.126713>:<15>:<15> FROM:0
+Node 12 recvd GOSSIP <0.126713>:<15>:<15> FROM:0
+Node 5 recvd GOSSIP <0.126713>:<15>:<15> FROM:1
+Node 9 recvd GOSSIP <0.126713>:<15>:<15> FROM:1
+Node 6 recvd GOSSIP <0.126713>:<15>:<15> FROM:7
+Node 10 recvd GOSSIP <0.126713>:<15>:<15> FROM:11
 Node 13 initiating task, splitting 100 elements into 20 parts.
 Node 13 computed local max 308 for subtask 13 from initiator 13
 Node 13 received result 308 for subtask 13
@@ -68,24 +68,24 @@ Node 14 computed local max 807 for subtask 14 from initiator 13
 Node 15 computed local max 590 for subtask 15 from initiator 13
 Node 1 computed local max 881 for subtask 17 from initiator 13
 Node 0 computed local max 955 for subtask 0 from initiator 13
-Node 13 received result 854 for subtask 1
 Node 2 computed local max 676 for subtask 2 from initiator 13
 Node 3 computed local max 931 for subtask 3 from initiator 13
-Node 13 received result 1000 for subtask 5
 Node 6 computed local max 907 for subtask 6 from initiator 13
 Node 7 computed local max 955 for subtask 7 from initiator 13
-Node 13 received result 964 for subtask 9
 Node 10 computed local max 783 for subtask 10 from initiator 13
-Node 13 received result 779 for subtask 11
 Node 13 received result 873 for subtask 12
-Node 13 received result 807 for subtask 14
-Node 13 received result 590 for subtask 15
 Node 0 computed local max 771 for subtask 16 from initiator 13
-Node 13 received result 881 for subtask 17
 Node 2 computed local max 841 for subtask 18 from initiator 13
 Node 3 computed local max 830 for subtask 19 from initiator 13
+Node 13 received result 854 for subtask 1
 Node 4 computed local max 862 for subtask 4 from initiator 13
+Node 13 received result 1000 for subtask 5
 Node 8 computed local max 932 for subtask 8 from initiator 13
+Node 13 received result 964 for subtask 9
+Node 13 received result 779 for subtask 11
+Node 13 received result 807 for subtask 14
+Node 13 received result 590 for subtask 15
+Node 13 received result 881 for subtask 17
 Node 13 received result 955 for subtask 0
 Node 13 received result 931 for subtask 3
 Node 13 received result 955 for subtask 7
@@ -98,22 +98,22 @@ Node 13 received result 907 for subtask 6
 Node 13 received result 932 for subtask 8
 Node 13 received result 841 for subtask 18
 Task Complete on Node 13. Conclusive Max: 1000
-Node 13 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 1 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 5 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 9 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 11 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 12 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 14 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 15 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:13
-Node 0 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:1
-Node 2 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:1
-Node 3 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:1
-Node 4 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:5
-Node 6 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:5
-Node 7 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:5
-Node 8 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:9
-Node 10 recvd GOSSIP IP:192.168.0.13 TS:0.347535 FROM:9
+Node 13 recvd GOSSIP <0.347535>:<13>:<13> FROM:13
+Node 1 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 5 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 9 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 11 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 12 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 14 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 15 recvd GOSSIP <0.357535>:<13>:<13> FROM:13
+Node 0 recvd GOSSIP <0.367535>:<13>:<13> FROM:1
+Node 2 recvd GOSSIP <0.367535>:<13>:<13> FROM:1
+Node 3 recvd GOSSIP <0.367535>:<13>:<13> FROM:1
+Node 4 recvd GOSSIP <0.367535>:<13>:<13> FROM:5
+Node 6 recvd GOSSIP <0.367535>:<13>:<13> FROM:5
+Node 7 recvd GOSSIP <0.367535>:<13>:<13> FROM:5
+Node 8 recvd GOSSIP <0.367535>:<13>:<13> FROM:9
+Node 10 recvd GOSSIP <0.367535>:<13>:<13> FROM:9
 Node 11 initiating task, splitting 100 elements into 20 parts.
 Node 11 computed local max 979 for subtask 11 from initiator 11
 Node 11 received result 979 for subtask 11
@@ -127,23 +127,23 @@ Node 15 computed local max 771 for subtask 15 from initiator 11
 Node 3 computed local max 920 for subtask 19 from initiator 11
 Node 0 computed local max 964 for subtask 0 from initiator 11
 Node 1 computed local max 890 for subtask 1 from initiator 11
-Node 11 received result 957 for subtask 3
 Node 4 computed local max 890 for subtask 4 from initiator 11
 Node 5 computed local max 929 for subtask 5 from initiator 11
-Node 11 received result 840 for subtask 7
 Node 8 computed local max 553 for subtask 8 from initiator 11
-Node 11 received result 780 for subtask 9
 Node 11 received result 887 for subtask 10
-Node 11 received result 999 for subtask 12
-Node 11 received result 728 for subtask 13
 Node 14 computed local max 695 for subtask 14 from initiator 11
-Node 11 received result 771 for subtask 15
 Node 0 computed local max 980 for subtask 16 from initiator 11
 Node 1 computed local max 950 for subtask 17 from initiator 11
-Node 11 received result 920 for subtask 19
 Node 2 computed local max 926 for subtask 2 from initiator 11
+Node 11 received result 957 for subtask 3
 Node 6 computed local max 764 for subtask 6 from initiator 11
+Node 11 received result 840 for subtask 7
+Node 11 received result 780 for subtask 9
+Node 11 received result 999 for subtask 12
+Node 11 received result 728 for subtask 13
+Node 11 received result 771 for subtask 15
 Node 2 computed local max 808 for subtask 18 from initiator 11
+Node 11 received result 920 for subtask 19
 Node 8 initiating task, splitting 100 elements into 20 parts.
 Node 8 computed local max 885 for subtask 8 from initiator 8
 Node 8 received result 885 for subtask 8
@@ -167,33 +167,26 @@ Node 11 received result 764 for subtask 6
 Node 11 received result 980 for subtask 16
 Node 11 received result 808 for subtask 18
 Task Complete on Node 11. Conclusive Max: 999
-Node 11 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
+Node 11 recvd GOSSIP <0.434382>:<11>:<11> FROM:11
 Node 12 initiating task, splitting 100 elements into 20 parts.
 Node 12 computed local max 821 for subtask 12 from initiator 12
 Node 12 received result 821 for subtask 12
-Node 8 received result 947 for subtask 0
 Node 1 computed local max 540 for subtask 1 from initiator 8
 Node 2 computed local max 866 for subtask 2 from initiator 8
-Node 8 received result 769 for subtask 4
 Node 5 computed local max 950 for subtask 5 from initiator 8
-Node 8 received result 447 for subtask 6
 Node 8 received result 377 for subtask 7
-Node 8 received result 872 for subtask 9
-Node 8 received result 754 for subtask 10
 Node 11 computed local max 515 for subtask 11 from initiator 8
-Node 8 received result 909 for subtask 12
 Node 13 computed local max 624 for subtask 13 from initiator 8
 Node 14 computed local max 972 for subtask 14 from initiator 8
-Node 8 received result 810 for subtask 16
 Node 1 computed local max 858 for subtask 17 from initiator 8
 Node 2 computed local max 988 for subtask 18 from initiator 8
-Node 3 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
-Node 7 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
-Node 9 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
-Node 10 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
-Node 12 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
-Node 13 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
-Node 15 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:11
+Node 3 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
+Node 7 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
+Node 9 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
+Node 10 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
+Node 12 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
+Node 13 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
+Node 15 recvd GOSSIP <0.444382>:<11>:<11> FROM:11
 Node 0 computed local max 629 for subtask 0 from initiator 12
 Node 4 computed local max 885 for subtask 4 from initiator 12
 Node 8 computed local max 969 for subtask 8 from initiator 12
@@ -202,31 +195,31 @@ Node 11 computed local max 942 for subtask 11 from initiator 12
 Node 13 computed local max 874 for subtask 13 from initiator 12
 Node 14 computed local max 940 for subtask 14 from initiator 12
 Node 0 computed local max 817 for subtask 16 from initiator 12
+Node 8 received result 947 for subtask 0
 Node 3 computed local max 931 for subtask 3 from initiator 8
+Node 8 received result 769 for subtask 4
+Node 8 received result 447 for subtask 6
+Node 8 received result 872 for subtask 9
+Node 8 received result 754 for subtask 10
+Node 8 received result 909 for subtask 12
 Node 15 computed local max 968 for subtask 15 from initiator 8
+Node 8 received result 810 for subtask 16
 Node 3 computed local max 983 for subtask 19 from initiator 8
-Node 1 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:3
-Node 2 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:3
-Node 4 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:3
-Node 5 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:3
-Node 6 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:7
-Node 8 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:7
-Node 14 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:10
-Node 0 recvd GOSSIP IP:192.168.0.11 TS:0.434382 FROM:12
-Node 12 received result 629 for subtask 0
+Node 1 recvd GOSSIP <0.454382>:<11>:<11> FROM:3
+Node 2 recvd GOSSIP <0.454382>:<11>:<11> FROM:3
+Node 4 recvd GOSSIP <0.454382>:<11>:<11> FROM:3
+Node 5 recvd GOSSIP <0.454382>:<11>:<11> FROM:3
+Node 6 recvd GOSSIP <0.454382>:<11>:<11> FROM:7
+Node 8 recvd GOSSIP <0.454382>:<11>:<11> FROM:7
+Node 14 recvd GOSSIP <0.454382>:<11>:<11> FROM:10
+Node 0 recvd GOSSIP <0.454382>:<11>:<11> FROM:12
 Node 1 computed local max 953 for subtask 1 from initiator 12
 Node 2 computed local max 892 for subtask 2 from initiator 12
-Node 12 received result 885 for subtask 4
 Node 5 computed local max 952 for subtask 5 from initiator 12
 Node 6 computed local max 801 for subtask 6 from initiator 12
-Node 12 received result 969 for subtask 8
 Node 9 computed local max 654 for subtask 9 from initiator 12
-Node 12 received result 950 for subtask 10
 Node 12 received result 942 for subtask 11
-Node 12 received result 874 for subtask 13
-Node 12 received result 940 for subtask 14
 Node 15 computed local max 942 for subtask 15 from initiator 12
-Node 12 received result 817 for subtask 16
 Node 1 computed local max 667 for subtask 17 from initiator 12
 Node 2 computed local max 946 for subtask 18 from initiator 12
 Node 8 received result 866 for subtask 2
@@ -234,8 +227,15 @@ Node 8 received result 950 for subtask 5
 Node 8 received result 515 for subtask 11
 Node 8 received result 972 for subtask 14
 Node 8 received result 988 for subtask 18
+Node 12 received result 629 for subtask 0
 Node 3 computed local max 585 for subtask 3 from initiator 12
+Node 12 received result 885 for subtask 4
 Node 7 computed local max 979 for subtask 7 from initiator 12
+Node 12 received result 969 for subtask 8
+Node 12 received result 950 for subtask 10
+Node 12 received result 874 for subtask 13
+Node 12 received result 940 for subtask 14
+Node 12 received result 817 for subtask 16
 Node 3 computed local max 890 for subtask 19 from initiator 12
 Node 8 received result 540 for subtask 1
 Node 8 received result 931 for subtask 3
@@ -244,19 +244,19 @@ Node 8 received result 968 for subtask 15
 Node 8 received result 858 for subtask 17
 Node 8 received result 983 for subtask 19
 Task Complete on Node 8. Conclusive Max: 988
-Node 8 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
+Node 8 recvd GOSSIP <0.473655>:<8>:<8> FROM:8
 Node 12 received result 892 for subtask 2
 Node 12 received result 801 for subtask 6
 Node 12 received result 654 for subtask 9
 Node 12 received result 942 for subtask 15
 Node 12 received result 946 for subtask 18
-Node 0 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
-Node 4 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
-Node 6 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
-Node 7 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
-Node 9 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
-Node 10 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
-Node 12 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:8
+Node 0 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
+Node 4 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
+Node 6 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
+Node 7 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
+Node 9 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
+Node 10 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
+Node 12 recvd GOSSIP <0.483655>:<8>:<8> FROM:8
 Node 12 received result 953 for subtask 1
 Node 12 received result 585 for subtask 3
 Node 12 received result 952 for subtask 5
@@ -264,30 +264,30 @@ Node 12 received result 979 for subtask 7
 Node 12 received result 667 for subtask 17
 Node 12 received result 890 for subtask 19
 Task Complete on Node 12. Conclusive Max: 979
-Node 12 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 1 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:0
-Node 2 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:0
-Node 14 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:0
-Node 15 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:0
-Node 3 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:4
-Node 5 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:4
-Node 11 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:7
-Node 13 recvd GOSSIP IP:192.168.0.8 TS:0.473655 FROM:9
-Node 0 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 4 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 8 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 10 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 11 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 13 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 14 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:12
-Node 1 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:0
-Node 2 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:0
-Node 15 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:0
-Node 3 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:4
-Node 5 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:4
-Node 6 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:4
-Node 7 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:8
-Node 9 recvd GOSSIP IP:192.168.0.12 TS:0.487587 FROM:8
+Node 12 recvd GOSSIP <0.487587>:<12>:<12> FROM:12
+Node 1 recvd GOSSIP <0.493655>:<8>:<8> FROM:0
+Node 2 recvd GOSSIP <0.493655>:<8>:<8> FROM:0
+Node 14 recvd GOSSIP <0.493655>:<8>:<8> FROM:0
+Node 15 recvd GOSSIP <0.493655>:<8>:<8> FROM:0
+Node 3 recvd GOSSIP <0.493655>:<8>:<8> FROM:4
+Node 5 recvd GOSSIP <0.493655>:<8>:<8> FROM:4
+Node 11 recvd GOSSIP <0.493655>:<8>:<8> FROM:7
+Node 13 recvd GOSSIP <0.493655>:<8>:<8> FROM:9
+Node 0 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 4 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 8 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 10 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 11 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 13 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 14 recvd GOSSIP <0.497587>:<12>:<12> FROM:12
+Node 1 recvd GOSSIP <0.507587>:<12>:<12> FROM:0
+Node 2 recvd GOSSIP <0.507587>:<12>:<12> FROM:0
+Node 15 recvd GOSSIP <0.507587>:<12>:<12> FROM:0
+Node 3 recvd GOSSIP <0.507587>:<12>:<12> FROM:4
+Node 5 recvd GOSSIP <0.507587>:<12>:<12> FROM:4
+Node 6 recvd GOSSIP <0.507587>:<12>:<12> FROM:4
+Node 7 recvd GOSSIP <0.507587>:<12>:<12> FROM:8
+Node 9 recvd GOSSIP <0.507587>:<12>:<12> FROM:8
 Node 6 initiating task, splitting 100 elements into 20 parts.
 Node 6 computed local max 789 for subtask 6 from initiator 6
 Node 6 received result 789 for subtask 6
@@ -314,42 +314,42 @@ Node 15 computed local max 442 for subtask 15 from initiator 0
 Node 1 computed local max 874 for subtask 17 from initiator 0
 Node 2 computed local max 499 for subtask 18 from initiator 0
 Node 0 computed local max 904 for subtask 0 from initiator 6
-Node 6 received result 775 for subtask 2
 Node 3 computed local max 963 for subtask 3 from initiator 6
-Node 6 received result 750 for subtask 4
 Node 6 received result 567 for subtask 5
-Node 6 received result 930 for subtask 7
-Node 6 received result 948 for subtask 8
 Node 9 computed local max 897 for subtask 9 from initiator 6
-Node 6 received result 933 for subtask 10
 Node 11 computed local max 811 for subtask 11 from initiator 6
 Node 12 computed local max 977 for subtask 12 from initiator 6
-Node 6 received result 928 for subtask 14
 Node 15 computed local max 624 for subtask 15 from initiator 6
 Node 0 computed local max 845 for subtask 16 from initiator 6
-Node 6 received result 898 for subtask 18
 Node 3 computed local max 808 for subtask 19 from initiator 6
-Node 0 received result 837 for subtask 1
-Node 0 received result 948 for subtask 2
 Node 3 computed local max 930 for subtask 3 from initiator 0
-Node 0 received result 853 for subtask 4
 Node 5 computed local max 708 for subtask 5 from initiator 0
 Node 6 computed local max 853 for subtask 6 from initiator 0
-Node 0 received result 980 for subtask 8
 Node 9 computed local max 998 for subtask 9 from initiator 0
 Node 10 computed local max 692 for subtask 10 from initiator 0
-Node 0 received result 852 for subtask 12
 Node 13 computed local max 866 for subtask 13 from initiator 0
-Node 0 received result 826 for subtask 14
 Node 0 received result 442 for subtask 15
-Node 0 received result 874 for subtask 17
-Node 0 received result 499 for subtask 18
 Node 3 computed local max 856 for subtask 19 from initiator 0
 Node 1 computed local max 986 for subtask 1 from initiator 6
+Node 6 received result 775 for subtask 2
+Node 6 received result 750 for subtask 4
+Node 6 received result 930 for subtask 7
+Node 6 received result 948 for subtask 8
+Node 6 received result 933 for subtask 10
 Node 13 computed local max 991 for subtask 13 from initiator 6
+Node 6 received result 928 for subtask 14
 Node 1 computed local max 940 for subtask 17 from initiator 6
+Node 6 received result 898 for subtask 18
+Node 0 received result 837 for subtask 1
+Node 0 received result 948 for subtask 2
+Node 0 received result 853 for subtask 4
 Node 7 computed local max 646 for subtask 7 from initiator 0
+Node 0 received result 980 for subtask 8
 Node 11 computed local max 739 for subtask 11 from initiator 0
+Node 0 received result 852 for subtask 12
+Node 0 received result 826 for subtask 14
+Node 0 received result 874 for subtask 17
+Node 0 received result 499 for subtask 18
 Node 6 received result 904 for subtask 0
 Node 6 received result 963 for subtask 3
 Node 6 received result 897 for subtask 9
@@ -372,13 +372,13 @@ Node 6 received result 991 for subtask 13
 Node 6 received result 624 for subtask 15
 Node 6 received result 940 for subtask 17
 Task Complete on Node 6. Conclusive Max: 991
-Node 6 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
+Node 6 recvd GOSSIP <0.594883>:<6>:<6> FROM:6
 Node 0 received result 708 for subtask 5
 Node 0 received result 646 for subtask 7
 Node 0 received result 998 for subtask 9
 Node 0 received result 739 for subtask 11
 Task Complete on Node 0. Conclusive Max: 998
-Node 0 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
+Node 0 recvd GOSSIP <0.598814>:<0>:<0> FROM:0
 Node 4 initiating task, splitting 100 elements into 20 parts.
 Node 4 computed local max 951 for subtask 4 from initiator 4
 Node 4 received result 951 for subtask 4
@@ -392,20 +392,20 @@ Node 15 computed local max 857 for subtask 15 from initiator 1
 Node 0 computed local max 903 for subtask 16 from initiator 1
 Node 2 computed local max 710 for subtask 18 from initiator 1
 Node 3 computed local max 918 for subtask 19 from initiator 1
-Node 2 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 4 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 5 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 7 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 8 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 10 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 14 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:6
-Node 1 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
-Node 2 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
-Node 4 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
-Node 8 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
-Node 12 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
-Node 14 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
-Node 15 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:0
+Node 2 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 4 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 5 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 7 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 8 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 10 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 14 recvd GOSSIP <0.604883>:<6>:<6> FROM:6
+Node 1 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
+Node 2 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
+Node 4 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
+Node 8 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
+Node 12 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
+Node 14 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
+Node 15 recvd GOSSIP <0.608814>:<0>:<0> FROM:0
 Node 0 computed local max 393 for subtask 0 from initiator 4
 Node 2 computed local max 983 for subtask 2 from initiator 4
 Node 3 computed local max 896 for subtask 3 from initiator 4
@@ -417,61 +417,61 @@ Node 0 computed local max 876 for subtask 16 from initiator 4
 Node 2 computed local max 776 for subtask 18 from initiator 4
 Node 3 computed local max 494 for subtask 19 from initiator 4
 Node 1 received result 952 for subtask 0
-Node 1 received result 816 for subtask 2
-Node 1 received result 972 for subtask 3
 Node 4 computed local max 686 for subtask 4 from initiator 1
-Node 1 received result 528 for subtask 5
 Node 6 computed local max 940 for subtask 6 from initiator 1
 Node 7 computed local max 861 for subtask 7 from initiator 1
-Node 1 received result 606 for subtask 9
 Node 10 computed local max 781 for subtask 10 from initiator 1
 Node 11 computed local max 849 for subtask 11 from initiator 1
-Node 1 received result 857 for subtask 13
 Node 14 computed local max 976 for subtask 14 from initiator 1
-Node 1 received result 857 for subtask 15
 Node 1 received result 903 for subtask 16
-Node 1 received result 710 for subtask 18
-Node 1 received result 918 for subtask 19
-Node 0 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:2
-Node 1 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:2
-Node 3 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:2
-Node 12 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:4
-Node 9 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:5
-Node 13 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:5
-Node 11 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:7
-Node 15 recvd GOSSIP IP:192.168.0.6 TS:0.594883 FROM:7
-Node 3 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:1
-Node 5 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:1
-Node 9 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:1
-Node 13 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:1
-Node 6 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:2
-Node 10 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:2
-Node 7 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:8
-Node 11 recvd GOSSIP IP:192.168.0.0 TS:0.598814 FROM:12
-Node 4 received result 393 for subtask 0
+Node 0 recvd GOSSIP <0.614883>:<6>:<6> FROM:2
+Node 1 recvd GOSSIP <0.614883>:<6>:<6> FROM:2
+Node 3 recvd GOSSIP <0.614883>:<6>:<6> FROM:2
+Node 12 recvd GOSSIP <0.614883>:<6>:<6> FROM:4
+Node 9 recvd GOSSIP <0.614883>:<6>:<6> FROM:5
+Node 13 recvd GOSSIP <0.614883>:<6>:<6> FROM:5
+Node 11 recvd GOSSIP <0.614883>:<6>:<6> FROM:7
+Node 15 recvd GOSSIP <0.614883>:<6>:<6> FROM:7
+Node 3 recvd GOSSIP <0.618814>:<0>:<0> FROM:1
+Node 5 recvd GOSSIP <0.618814>:<0>:<0> FROM:1
+Node 9 recvd GOSSIP <0.618814>:<0>:<0> FROM:1
+Node 13 recvd GOSSIP <0.618814>:<0>:<0> FROM:1
+Node 6 recvd GOSSIP <0.618814>:<0>:<0> FROM:2
+Node 10 recvd GOSSIP <0.618814>:<0>:<0> FROM:2
+Node 7 recvd GOSSIP <0.618814>:<0>:<0> FROM:8
+Node 11 recvd GOSSIP <0.618814>:<0>:<0> FROM:12
 Node 1 computed local max 767 for subtask 1 from initiator 4
-Node 4 received result 983 for subtask 2
 Node 4 received result 896 for subtask 3
-Node 4 received result 814 for subtask 5
-Node 4 received result 755 for subtask 6
 Node 7 computed local max 476 for subtask 7 from initiator 4
-Node 4 received result 901 for subtask 8
 Node 9 computed local max 710 for subtask 9 from initiator 4
 Node 10 computed local max 644 for subtask 10 from initiator 4
-Node 4 received result 950 for subtask 12
 Node 13 computed local max 930 for subtask 13 from initiator 4
 Node 14 computed local max 815 for subtask 14 from initiator 4
-Node 4 received result 876 for subtask 16
 Node 1 computed local max 887 for subtask 17 from initiator 4
-Node 4 received result 776 for subtask 18
 Node 4 received result 494 for subtask 19
+Node 1 received result 816 for subtask 2
+Node 1 received result 972 for subtask 3
+Node 1 received result 528 for subtask 5
 Node 8 computed local max 742 for subtask 8 from initiator 1
+Node 1 received result 606 for subtask 9
 Node 12 computed local max 731 for subtask 12 from initiator 1
+Node 1 received result 857 for subtask 13
+Node 1 received result 857 for subtask 15
+Node 1 received result 710 for subtask 18
+Node 1 received result 918 for subtask 19
 Node 9 initiating task, splitting 100 elements into 20 parts.
 Node 9 computed local max 923 for subtask 9 from initiator 9
 Node 9 received result 923 for subtask 9
+Node 4 received result 393 for subtask 0
+Node 4 received result 983 for subtask 2
+Node 4 received result 814 for subtask 5
+Node 4 received result 755 for subtask 6
+Node 4 received result 901 for subtask 8
 Node 11 computed local max 915 for subtask 11 from initiator 4
+Node 4 received result 950 for subtask 12
 Node 15 computed local max 887 for subtask 15 from initiator 4
+Node 4 received result 876 for subtask 16
+Node 4 received result 776 for subtask 18
 Node 1 received result 686 for subtask 4
 Node 1 received result 861 for subtask 7
 Node 1 received result 849 for subtask 11
@@ -494,21 +494,14 @@ Node 1 received result 742 for subtask 8
 Node 1 received result 781 for subtask 10
 Node 1 received result 731 for subtask 12
 Task Complete on Node 1. Conclusive Max: 999
-Node 1 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 9 received result 859 for subtask 1
+Node 1 recvd GOSSIP <0.642845>:<1>:<1> FROM:1
 Node 2 computed local max 888 for subtask 2 from initiator 9
 Node 3 computed local max 533 for subtask 3 from initiator 9
-Node 9 received result 877 for subtask 5
 Node 6 computed local max 886 for subtask 6 from initiator 9
-Node 9 received result 618 for subtask 7
 Node 9 received result 929 for subtask 8
-Node 9 received result 789 for subtask 10
-Node 9 received result 921 for subtask 11
 Node 12 computed local max 665 for subtask 12 from initiator 9
-Node 9 received result 724 for subtask 13
 Node 14 computed local max 903 for subtask 14 from initiator 9
 Node 15 computed local max 967 for subtask 15 from initiator 9
-Node 9 received result 684 for subtask 17
 Node 2 computed local max 784 for subtask 18 from initiator 9
 Node 3 computed local max 909 for subtask 19 from initiator 9
 Node 10 initiating task, splitting 100 elements into 20 parts.
@@ -519,17 +512,24 @@ Node 4 received result 915 for subtask 11
 Node 4 received result 930 for subtask 13
 Node 4 received result 887 for subtask 15
 Task Complete on Node 4. Conclusive Max: 983
-Node 4 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 0 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 2 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 3 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 5 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 9 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 13 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
-Node 15 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:1
+Node 4 recvd GOSSIP <0.652763>:<4>:<4> FROM:4
+Node 0 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
+Node 2 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
+Node 3 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
+Node 5 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
+Node 9 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
+Node 13 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
+Node 15 recvd GOSSIP <0.652845>:<1>:<1> FROM:1
 Node 0 computed local max 979 for subtask 0 from initiator 9
+Node 9 received result 859 for subtask 1
 Node 4 computed local max 963 for subtask 4 from initiator 9
+Node 9 received result 877 for subtask 5
+Node 9 received result 618 for subtask 7
+Node 9 received result 789 for subtask 10
+Node 9 received result 921 for subtask 11
+Node 9 received result 724 for subtask 13
 Node 0 computed local max 871 for subtask 16 from initiator 9
+Node 9 received result 684 for subtask 17
 Node 2 computed local max 820 for subtask 2 from initiator 10
 Node 6 computed local max 787 for subtask 6 from initiator 10
 Node 8 computed local max 613 for subtask 8 from initiator 10
@@ -538,50 +538,43 @@ Node 11 computed local max 497 for subtask 11 from initiator 10
 Node 12 computed local max 833 for subtask 12 from initiator 10
 Node 14 computed local max 805 for subtask 14 from initiator 10
 Node 2 computed local max 843 for subtask 18 from initiator 10
-Node 0 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 2 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 3 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 5 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 6 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 8 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 12 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:4
-Node 4 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:0
-Node 8 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:0
-Node 12 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:0
-Node 14 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:0
-Node 6 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:2
-Node 10 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:2
-Node 7 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:3
-Node 11 recvd GOSSIP IP:192.168.0.1 TS:0.642845 FROM:3
+Node 0 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 2 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 3 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 5 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 6 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 8 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 12 recvd GOSSIP <0.662763>:<4>:<4> FROM:4
+Node 4 recvd GOSSIP <0.662845>:<1>:<1> FROM:0
+Node 8 recvd GOSSIP <0.662845>:<1>:<1> FROM:0
+Node 12 recvd GOSSIP <0.662845>:<1>:<1> FROM:0
+Node 14 recvd GOSSIP <0.662845>:<1>:<1> FROM:0
+Node 6 recvd GOSSIP <0.662845>:<1>:<1> FROM:2
+Node 10 recvd GOSSIP <0.662845>:<1>:<1> FROM:2
+Node 7 recvd GOSSIP <0.662845>:<1>:<1> FROM:3
+Node 11 recvd GOSSIP <0.662845>:<1>:<1> FROM:3
 Node 9 received result 533 for subtask 3
 Node 9 received result 886 for subtask 6
 Node 9 received result 665 for subtask 12
 Node 9 received result 967 for subtask 15
 Node 9 received result 909 for subtask 19
 Node 0 computed local max 894 for subtask 0 from initiator 10
-Node 10 received result 820 for subtask 2
 Node 3 computed local max 670 for subtask 3 from initiator 10
 Node 4 computed local max 969 for subtask 4 from initiator 10
-Node 10 received result 787 for subtask 6
 Node 7 computed local max 605 for subtask 7 from initiator 10
-Node 10 received result 613 for subtask 8
 Node 10 received result 923 for subtask 9
-Node 10 received result 497 for subtask 11
-Node 10 received result 833 for subtask 12
 Node 13 computed local max 1000 for subtask 13 from initiator 10
-Node 10 received result 805 for subtask 14
 Node 15 computed local max 774 for subtask 15 from initiator 10
 Node 0 computed local max 999 for subtask 16 from initiator 10
-Node 10 received result 843 for subtask 18
 Node 3 computed local max 881 for subtask 19 from initiator 10
-Node 1 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:0
-Node 14 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:0
-Node 15 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:0
-Node 10 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:2
-Node 7 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:3
-Node 11 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:3
-Node 9 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:5
-Node 13 recvd GOSSIP IP:192.168.0.4 TS:0.652763 FROM:5
+Node 1 recvd GOSSIP <0.672763>:<4>:<4> FROM:0
+Node 14 recvd GOSSIP <0.672763>:<4>:<4> FROM:0
+Node 15 recvd GOSSIP <0.672763>:<4>:<4> FROM:0
+Node 10 recvd GOSSIP <0.672763>:<4>:<4> FROM:2
+Node 7 recvd GOSSIP <0.672763>:<4>:<4> FROM:3
+Node 11 recvd GOSSIP <0.672763>:<4>:<4> FROM:3
+Node 9 recvd GOSSIP <0.672763>:<4>:<4> FROM:5
+Node 13 recvd GOSSIP <0.672763>:<4>:<4> FROM:5
 Node 9 received result 979 for subtask 0
 Node 9 received result 888 for subtask 2
 Node 9 received result 963 for subtask 4
@@ -589,30 +582,37 @@ Node 9 received result 903 for subtask 14
 Node 9 received result 871 for subtask 16
 Node 9 received result 784 for subtask 18
 Task Complete on Node 9. Conclusive Max: 979
-Node 9 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
+Node 9 recvd GOSSIP <0.673564>:<9>:<9> FROM:9
 Node 1 computed local max 935 for subtask 1 from initiator 10
+Node 10 received result 820 for subtask 2
 Node 5 computed local max 812 for subtask 5 from initiator 10
+Node 10 received result 787 for subtask 6
+Node 10 received result 613 for subtask 8
+Node 10 received result 497 for subtask 11
+Node 10 received result 833 for subtask 12
+Node 10 received result 805 for subtask 14
 Node 1 computed local max 728 for subtask 17 from initiator 10
-Node 1 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
-Node 5 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
-Node 7 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
-Node 8 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
-Node 10 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
-Node 11 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
-Node 13 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:9
+Node 10 received result 843 for subtask 18
+Node 1 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
+Node 5 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
+Node 7 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
+Node 8 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
+Node 10 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
+Node 11 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
+Node 13 recvd GOSSIP <0.683564>:<9>:<9> FROM:9
 Node 10 received result 894 for subtask 0
 Node 10 received result 969 for subtask 4
 Node 10 received result 605 for subtask 7
 Node 10 received result 1000 for subtask 13
 Node 10 received result 999 for subtask 16
-Node 0 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:1
-Node 2 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:1
-Node 3 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:1
-Node 15 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:1
-Node 4 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:5
-Node 6 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:5
-Node 12 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:8
-Node 14 recvd GOSSIP IP:192.168.0.9 TS:0.673564 FROM:10
+Node 0 recvd GOSSIP <0.693564>:<9>:<9> FROM:1
+Node 2 recvd GOSSIP <0.693564>:<9>:<9> FROM:1
+Node 3 recvd GOSSIP <0.693564>:<9>:<9> FROM:1
+Node 15 recvd GOSSIP <0.693564>:<9>:<9> FROM:1
+Node 4 recvd GOSSIP <0.693564>:<9>:<9> FROM:5
+Node 6 recvd GOSSIP <0.693564>:<9>:<9> FROM:5
+Node 12 recvd GOSSIP <0.693564>:<9>:<9> FROM:8
+Node 14 recvd GOSSIP <0.693564>:<9>:<9> FROM:10
 Node 10 received result 935 for subtask 1
 Node 10 received result 670 for subtask 3
 Node 10 received result 812 for subtask 5
@@ -620,27 +620,27 @@ Node 10 received result 774 for subtask 15
 Node 10 received result 728 for subtask 17
 Node 10 received result 881 for subtask 19
 Task Complete on Node 10. Conclusive Max: 1000
-Node 10 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 2 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 6 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 8 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 9 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 11 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 12 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
-Node 14 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:10
+Node 10 recvd GOSSIP <0.695894>:<10>:<10> FROM:10
+Node 2 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
+Node 6 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
+Node 8 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
+Node 9 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
+Node 11 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
+Node 12 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
+Node 14 recvd GOSSIP <0.705894>:<10>:<10> FROM:10
 Node 2 initiating task, splitting 100 elements into 20 parts.
 Node 2 computed local max 743 for subtask 2 from initiator 2
 Node 2 computed local max 542 for subtask 18 from initiator 2
 Node 2 received result 743 for subtask 2
 Node 2 received result 542 for subtask 18
-Node 0 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:2
-Node 1 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:2
-Node 3 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:2
-Node 4 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:2
-Node 5 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:6
-Node 7 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:6
-Node 13 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:9
-Node 15 recvd GOSSIP IP:192.168.0.10 TS:0.695894 FROM:11
+Node 0 recvd GOSSIP <0.715894>:<10>:<10> FROM:2
+Node 1 recvd GOSSIP <0.715894>:<10>:<10> FROM:2
+Node 3 recvd GOSSIP <0.715894>:<10>:<10> FROM:2
+Node 4 recvd GOSSIP <0.715894>:<10>:<10> FROM:2
+Node 5 recvd GOSSIP <0.715894>:<10>:<10> FROM:6
+Node 7 recvd GOSSIP <0.715894>:<10>:<10> FROM:6
+Node 13 recvd GOSSIP <0.715894>:<10>:<10> FROM:9
+Node 15 recvd GOSSIP <0.715894>:<10>:<10> FROM:11
 Node 0 computed local max 953 for subtask 0 from initiator 2
 Node 1 computed local max 954 for subtask 1 from initiator 2
 Node 3 computed local max 913 for subtask 3 from initiator 2
@@ -651,24 +651,24 @@ Node 14 computed local max 773 for subtask 14 from initiator 2
 Node 0 computed local max 742 for subtask 16 from initiator 2
 Node 1 computed local max 692 for subtask 17 from initiator 2
 Node 3 computed local max 678 for subtask 19 from initiator 2
-Node 2 received result 953 for subtask 0
 Node 2 received result 954 for subtask 1
-Node 2 received result 913 for subtask 3
-Node 2 received result 860 for subtask 4
 Node 5 computed local max 867 for subtask 5 from initiator 2
-Node 2 received result 627 for subtask 6
 Node 7 computed local max 1000 for subtask 7 from initiator 2
 Node 8 computed local max 850 for subtask 8 from initiator 2
-Node 2 received result 788 for subtask 10
 Node 11 computed local max 876 for subtask 11 from initiator 2
 Node 12 computed local max 766 for subtask 12 from initiator 2
-Node 2 received result 773 for subtask 14
 Node 15 computed local max 875 for subtask 15 from initiator 2
-Node 2 received result 742 for subtask 16
 Node 2 received result 692 for subtask 17
-Node 2 received result 678 for subtask 19
+Node 2 received result 953 for subtask 0
+Node 2 received result 913 for subtask 3
+Node 2 received result 860 for subtask 4
+Node 2 received result 627 for subtask 6
 Node 9 computed local max 878 for subtask 9 from initiator 2
+Node 2 received result 788 for subtask 10
 Node 13 computed local max 977 for subtask 13 from initiator 2
+Node 2 received result 773 for subtask 14
+Node 2 received result 742 for subtask 16
+Node 2 received result 678 for subtask 19
 Node 2 received result 867 for subtask 5
 Node 2 received result 850 for subtask 8
 Node 2 received result 766 for subtask 12
@@ -678,22 +678,22 @@ Node 2 received result 878 for subtask 9
 Node 2 received result 876 for subtask 11
 Node 2 received result 977 for subtask 13
 Task Complete on Node 2. Conclusive Max: 1000
-Node 2 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 0 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 1 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 3 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 4 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 6 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 10 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 14 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:2
-Node 8 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:0
-Node 12 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:0
-Node 15 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:0
-Node 5 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:1
-Node 9 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:1
-Node 13 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:1
-Node 7 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:3
-Node 11 recvd GOSSIP IP:192.168.0.2 TS:0.765189 FROM:3
+Node 2 recvd GOSSIP <0.765189>:<2>:<2> FROM:2
+Node 0 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 1 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 3 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 4 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 6 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 10 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 14 recvd GOSSIP <0.775189>:<2>:<2> FROM:2
+Node 8 recvd GOSSIP <0.785189>:<2>:<2> FROM:0
+Node 12 recvd GOSSIP <0.785189>:<2>:<2> FROM:0
+Node 15 recvd GOSSIP <0.785189>:<2>:<2> FROM:0
+Node 5 recvd GOSSIP <0.785189>:<2>:<2> FROM:1
+Node 9 recvd GOSSIP <0.785189>:<2>:<2> FROM:1
+Node 13 recvd GOSSIP <0.785189>:<2>:<2> FROM:1
+Node 7 recvd GOSSIP <0.785189>:<2>:<2> FROM:3
+Node 11 recvd GOSSIP <0.785189>:<2>:<2> FROM:3
 Node 3 initiating task, splitting 100 elements into 20 parts.
 Node 3 computed local max 730 for subtask 3 from initiator 3
 Node 3 computed local max 613 for subtask 19 from initiator 3
@@ -723,37 +723,23 @@ Node 5 initiating task, splitting 100 elements into 20 parts.
 Node 5 computed local max 755 for subtask 5 from initiator 5
 Node 5 received result 755 for subtask 5
 Node 0 computed local max 868 for subtask 0 from initiator 3
-Node 3 received result 792 for subtask 1
 Node 3 received result 806 for subtask 2
-Node 3 received result 977 for subtask 4
-Node 3 received result 881 for subtask 5
 Node 6 computed local max 916 for subtask 6 from initiator 3
-Node 3 received result 930 for subtask 7
 Node 8 computed local max 695 for subtask 8 from initiator 3
 Node 9 computed local max 851 for subtask 9 from initiator 3
-Node 3 received result 935 for subtask 11
 Node 12 computed local max 902 for subtask 12 from initiator 3
 Node 13 computed local max 946 for subtask 13 from initiator 3
-Node 3 received result 900 for subtask 15
 Node 0 computed local max 967 for subtask 16 from initiator 3
-Node 3 received result 917 for subtask 17
 Node 3 received result 986 for subtask 18
 Node 0 computed local max 995 for subtask 0 from initiator 7
 Node 1 computed local max 994 for subtask 1 from initiator 7
-Node 7 received result 857 for subtask 3
 Node 4 computed local max 920 for subtask 4 from initiator 7
-Node 7 received result 771 for subtask 5
 Node 7 received result 968 for subtask 6
-Node 7 received result 948 for subtask 8
-Node 7 received result 891 for subtask 9
 Node 10 computed local max 601 for subtask 10 from initiator 7
-Node 7 received result 837 for subtask 11
 Node 12 computed local max 908 for subtask 12 from initiator 7
 Node 13 computed local max 986 for subtask 13 from initiator 7
-Node 7 received result 785 for subtask 15
 Node 0 computed local max 915 for subtask 16 from initiator 7
 Node 1 computed local max 905 for subtask 17 from initiator 7
-Node 7 received result 850 for subtask 19
 Node 1 computed local max 880 for subtask 1 from initiator 5
 Node 3 computed local max 898 for subtask 3 from initiator 5
 Node 4 computed local max 809 for subtask 4 from initiator 5
@@ -763,27 +749,33 @@ Node 9 computed local max 849 for subtask 9 from initiator 5
 Node 13 computed local max 541 for subtask 13 from initiator 5
 Node 1 computed local max 972 for subtask 17 from initiator 5
 Node 3 computed local max 946 for subtask 19 from initiator 5
+Node 3 received result 792 for subtask 1
+Node 3 received result 977 for subtask 4
+Node 3 received result 881 for subtask 5
+Node 3 received result 930 for subtask 7
 Node 10 computed local max 515 for subtask 10 from initiator 3
+Node 3 received result 935 for subtask 11
 Node 14 computed local max 946 for subtask 14 from initiator 3
+Node 3 received result 900 for subtask 15
+Node 3 received result 917 for subtask 17
 Node 2 computed local max 775 for subtask 2 from initiator 7
+Node 7 received result 857 for subtask 3
+Node 7 received result 771 for subtask 5
+Node 7 received result 948 for subtask 8
+Node 7 received result 891 for subtask 9
+Node 7 received result 837 for subtask 11
 Node 14 computed local max 970 for subtask 14 from initiator 7
+Node 7 received result 785 for subtask 15
 Node 2 computed local max 979 for subtask 18 from initiator 7
-Node 5 received result 880 for subtask 1
+Node 7 received result 850 for subtask 19
 Node 2 computed local max 859 for subtask 2 from initiator 5
-Node 5 received result 898 for subtask 3
 Node 5 received result 809 for subtask 4
-Node 5 received result 920 for subtask 6
-Node 5 received result 742 for subtask 7
 Node 8 computed local max 820 for subtask 8 from initiator 5
-Node 5 received result 849 for subtask 9
 Node 10 computed local max 735 for subtask 10 from initiator 5
 Node 11 computed local max 865 for subtask 11 from initiator 5
-Node 5 received result 541 for subtask 13
 Node 14 computed local max 973 for subtask 14 from initiator 5
 Node 15 computed local max 975 for subtask 15 from initiator 5
-Node 5 received result 972 for subtask 17
 Node 2 computed local max 723 for subtask 18 from initiator 5
-Node 5 received result 946 for subtask 19
 Node 3 received result 868 for subtask 0
 Node 3 received result 916 for subtask 6
 Node 3 received result 851 for subtask 9
@@ -795,8 +787,16 @@ Node 7 received result 601 for subtask 10
 Node 7 received result 986 for subtask 13
 Node 7 received result 905 for subtask 17
 Node 0 computed local max 827 for subtask 0 from initiator 5
+Node 5 received result 880 for subtask 1
+Node 5 received result 898 for subtask 3
+Node 5 received result 920 for subtask 6
+Node 5 received result 742 for subtask 7
+Node 5 received result 849 for subtask 9
 Node 12 computed local max 912 for subtask 12 from initiator 5
+Node 5 received result 541 for subtask 13
 Node 0 computed local max 301 for subtask 16 from initiator 5
+Node 5 received result 972 for subtask 17
+Node 5 received result 946 for subtask 19
 Node 14 initiating task, splitting 100 elements into 20 parts.
 Node 14 computed local max 645 for subtask 14 from initiator 14
 Node 14 received result 645 for subtask 14
@@ -805,7 +805,7 @@ Node 3 received result 515 for subtask 10
 Node 3 received result 902 for subtask 12
 Node 3 received result 946 for subtask 14
 Task Complete on Node 3. Conclusive Max: 986
-Node 3 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
+Node 3 recvd GOSSIP <0.894266>:<3>:<3> FROM:3
 Node 7 received result 995 for subtask 0
 Node 7 received result 775 for subtask 2
 Node 7 received result 908 for subtask 12
@@ -813,7 +813,7 @@ Node 7 received result 970 for subtask 14
 Node 7 received result 915 for subtask 16
 Node 7 received result 979 for subtask 18
 Task Complete on Node 7. Conclusive Max: 995
-Node 7 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
+Node 7 recvd GOSSIP <0.897252>:<7>:<7> FROM:7
 Node 5 received result 859 for subtask 2
 Node 5 received result 820 for subtask 8
 Node 5 received result 865 for subtask 11
@@ -828,77 +828,77 @@ Node 13 computed local max 1000 for subtask 13 from initiator 14
 Node 15 computed local max 859 for subtask 15 from initiator 14
 Node 0 computed local max 758 for subtask 16 from initiator 14
 Node 2 computed local max 798 for subtask 18 from initiator 14
-Node 1 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 2 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 4 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 5 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 7 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 11 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 15 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:3
-Node 3 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
-Node 5 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
-Node 6 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
-Node 8 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
-Node 9 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
-Node 11 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
-Node 15 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:7
+Node 1 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 2 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 4 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 5 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 7 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 11 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 15 recvd GOSSIP <0.904266>:<3>:<3> FROM:3
+Node 3 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
+Node 5 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
+Node 6 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
+Node 8 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
+Node 9 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
+Node 11 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
+Node 15 recvd GOSSIP <0.907252>:<7>:<7> FROM:7
 Node 5 received result 827 for subtask 0
 Node 5 received result 735 for subtask 10
 Node 5 received result 912 for subtask 12
 Node 5 received result 973 for subtask 14
 Node 5 received result 301 for subtask 16
 Task Complete on Node 5. Conclusive Max: 975
-Node 5 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 14 received result 753 for subtask 0
+Node 5 recvd GOSSIP <0.907946>:<5>:<5> FROM:5
 Node 1 computed local max 944 for subtask 1 from initiator 14
-Node 14 received result 663 for subtask 2
 Node 3 computed local max 681 for subtask 3 from initiator 14
 Node 4 computed local max 803 for subtask 4 from initiator 14
-Node 14 received result 924 for subtask 6
 Node 7 computed local max 772 for subtask 7 from initiator 14
 Node 8 computed local max 636 for subtask 8 from initiator 14
-Node 14 received result 961 for subtask 10
 Node 11 computed local max 681 for subtask 11 from initiator 14
-Node 14 received result 923 for subtask 12
 Node 14 received result 1000 for subtask 13
+Node 1 computed local max 956 for subtask 17 from initiator 14
+Node 3 computed local max 992 for subtask 19 from initiator 14
+Node 0 recvd GOSSIP <0.914266>:<3>:<3> FROM:1
+Node 9 recvd GOSSIP <0.914266>:<3>:<3> FROM:1
+Node 13 recvd GOSSIP <0.914266>:<3>:<3> FROM:1
+Node 6 recvd GOSSIP <0.914266>:<3>:<3> FROM:2
+Node 10 recvd GOSSIP <0.914266>:<3>:<3> FROM:2
+Node 14 recvd GOSSIP <0.914266>:<3>:<3> FROM:2
+Node 8 recvd GOSSIP <0.914266>:<3>:<3> FROM:4
+Node 12 recvd GOSSIP <0.914266>:<3>:<3> FROM:4
+Node 1 recvd GOSSIP <0.917252>:<7>:<7> FROM:3
+Node 2 recvd GOSSIP <0.917252>:<7>:<7> FROM:3
+Node 4 recvd GOSSIP <0.917252>:<7>:<7> FROM:3
+Node 13 recvd GOSSIP <0.917252>:<7>:<7> FROM:5
+Node 10 recvd GOSSIP <0.917252>:<7>:<7> FROM:6
+Node 14 recvd GOSSIP <0.917252>:<7>:<7> FROM:6
+Node 0 recvd GOSSIP <0.917252>:<7>:<7> FROM:8
+Node 12 recvd GOSSIP <0.917252>:<7>:<7> FROM:8
+Node 1 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 3 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 4 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 6 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 7 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 9 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 13 recvd GOSSIP <0.917946>:<5>:<5> FROM:5
+Node 14 received result 753 for subtask 0
+Node 14 received result 663 for subtask 2
+Node 5 computed local max 872 for subtask 5 from initiator 14
+Node 14 received result 924 for subtask 6
+Node 9 computed local max 648 for subtask 9 from initiator 14
+Node 14 received result 961 for subtask 10
+Node 14 received result 923 for subtask 12
 Node 14 received result 859 for subtask 15
 Node 14 received result 758 for subtask 16
-Node 1 computed local max 956 for subtask 17 from initiator 14
 Node 14 received result 798 for subtask 18
-Node 3 computed local max 992 for subtask 19 from initiator 14
-Node 0 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:1
-Node 9 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:1
-Node 13 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:1
-Node 6 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:2
-Node 10 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:2
-Node 14 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:2
-Node 8 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:4
-Node 12 recvd GOSSIP IP:192.168.0.3 TS:0.894266 FROM:4
-Node 1 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:3
-Node 2 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:3
-Node 4 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:3
-Node 13 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:5
-Node 10 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:6
-Node 14 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:6
-Node 0 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:8
-Node 12 recvd GOSSIP IP:192.168.0.7 TS:0.897252 FROM:8
-Node 1 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 3 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 4 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 6 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 7 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 9 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 13 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:5
-Node 5 computed local max 872 for subtask 5 from initiator 14
-Node 9 computed local max 648 for subtask 9 from initiator 14
-Node 0 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:1
-Node 2 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:1
-Node 15 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:1
-Node 11 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:3
-Node 8 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:4
-Node 12 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:4
-Node 10 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:6
-Node 14 recvd GOSSIP IP:192.168.0.5 TS:0.907946 FROM:6
+Node 0 recvd GOSSIP <0.927946>:<5>:<5> FROM:1
+Node 2 recvd GOSSIP <0.927946>:<5>:<5> FROM:1
+Node 15 recvd GOSSIP <0.927946>:<5>:<5> FROM:1
+Node 11 recvd GOSSIP <0.927946>:<5>:<5> FROM:3
+Node 8 recvd GOSSIP <0.927946>:<5>:<5> FROM:4
+Node 12 recvd GOSSIP <0.927946>:<5>:<5> FROM:4
+Node 10 recvd GOSSIP <0.927946>:<5>:<5> FROM:6
+Node 14 recvd GOSSIP <0.927946>:<5>:<5> FROM:6
 Node 14 received result 944 for subtask 1
 Node 14 received result 803 for subtask 4
 Node 14 received result 636 for subtask 8
@@ -910,5 +910,35 @@ Node 14 received result 772 for subtask 7
 Node 14 received result 648 for subtask 9
 Node 14 received result 992 for subtask 19
 Task Complete on Node 14. Conclusive Max: 1000
-Node 14 recvd GOSSIP IP:192.168.0.14 TS:0.941773 FROM:14
+Node 14 recvd GOSSIP <0.941773>:<14>:<14> FROM:14
 Node 14 received gossips from all N nodes. Terminating.
+Node 0 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 0 received gossips from all N nodes. Terminating.
+Node 2 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 2 received gossips from all N nodes. Terminating.
+Node 6 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 6 received gossips from all N nodes. Terminating.
+Node 10 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 10 received gossips from all N nodes. Terminating.
+Node 12 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 12 received gossips from all N nodes. Terminating.
+Node 13 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 13 received gossips from all N nodes. Terminating.
+Node 15 recvd GOSSIP <0.951773>:<14>:<14> FROM:14
+Node 15 received gossips from all N nodes. Terminating.
+Node 1 recvd GOSSIP <0.961773>:<14>:<14> FROM:0
+Node 1 received gossips from all N nodes. Terminating.
+Node 4 recvd GOSSIP <0.961773>:<14>:<14> FROM:0
+Node 4 received gossips from all N nodes. Terminating.
+Node 8 recvd GOSSIP <0.961773>:<14>:<14> FROM:0
+Node 8 received gossips from all N nodes. Terminating.
+Node 3 recvd GOSSIP <0.961773>:<14>:<14> FROM:2
+Node 3 received gossips from all N nodes. Terminating.
+Node 5 recvd GOSSIP <0.961773>:<14>:<14> FROM:6
+Node 5 received gossips from all N nodes. Terminating.
+Node 7 recvd GOSSIP <0.961773>:<14>:<14> FROM:6
+Node 7 received gossips from all N nodes. Terminating.
+Node 9 recvd GOSSIP <0.961773>:<14>:<14> FROM:10
+Node 9 received gossips from all N nodes. Terminating.
+Node 11 recvd GOSSIP <0.961773>:<14>:<14> FROM:10
+Node 11 received gossips from all N nodes. Terminating.
