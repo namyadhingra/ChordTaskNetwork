@@ -216,9 +216,9 @@ void ClientNode::handleGossipMsg(ChordAppMsg *msg)
     receivedGossips.insert(gossipKey);
     ++uniqueGossips;
 
-    logOutput("Node " + std::to_string(myId) + " recvd GOSSIP <" + std::to_string(simTime().dbl()) + ">:<" +
-              std::to_string(msg->getGossipOriginIP()) + ">:<" + std::to_string(msg->getGossipClientId()) + "> FROM:" +
-              std::to_string(msg->getSourceId()));
+    logOutput("Node " + std::to_string(myId) + " recvd GOSSIP message <" + std::to_string(msg->getGossipTimestamp()) + ">:<" +
+              std::to_string(msg->getGossipOriginIP()) + ">:<" + std::to_string(msg->getGossipClientId()) + ">" +
+              ", Local Timestamp: " + std::to_string(simTime().dbl()) + ", Received From: " + std::to_string(msg->getSourceId()));
 
     const bool shouldTerminate = (uniqueGossips >= N);
 
