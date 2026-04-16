@@ -1,0 +1,16 @@
+Commands to clean and remove old make files:
+
+# Clean up objects and binaries if the current Makefile works
+make clean
+
+# Remove the generated Makefile
+rm -f Makefile
+
+# Remove the output directory containing the object files
+rm -rf out/
+
+# Remove the previously built executable that is causing the circular dependency
+rm -f ChordTaskNetwork
+
+# Remove any generated message source files (they will be recreated by make)
+rm -f *_m.cc *_m.h
