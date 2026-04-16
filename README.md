@@ -1,4 +1,9 @@
+# CSL3080 Computer Networks Assignment - 2
 # Distributed Task Execution and Gossip Protocol Simulation in OMNeT++
+
+**Group Members:**
+1. Namya Dhingra - B23CS1040
+2. Bhargav Shekokar - B23CS1008
 
 This project simulates a fully distributed, Peer-to-Peer network modeled after the CHORD Distributed Hash Table protocol. The primary objectives are to execute a distributed task (such as finding the maximum element in a large dataset) across multiple nodes simultaneously and to disseminate the results using an optimized Gossip protocol.
 
@@ -46,12 +51,12 @@ For detailed explanations and mode selection guide, see [Section 3](#3-steps-to-
 
 The project is structured around several distinct components that separate the network logic, message passing, and topological structure.
 
-*   `generate_topo.py`: A Python script responsible for initially computing the topology. It generates a `config.txt` file containing the network parameters (number of nodes $N$, dataset size $k$, and subdivisions $x$) alongside a `topo.txt` file. The `topo.txt` file specifies the explicit edges establishing the optimal $O(\log N)$ CHORD routing links.
+*   `generate_topo.py`: A Python script responsible for initially computing the topology. It generates a `config.txt` file containing the network parameters (number of nodes $N$, dataset size $k$, and subdivisions $x$) alongside a `topo.txt` file. The `topo.txt` file specifies the explicit edges establishing the optimal $O(\log N)$ CHORD routing links. These links allow our task allocation and gossip protocols to bypass worst-case $O(N)$ ring operations.
 *   `ClientNode.ned` and `Coordinator.ned`: Network description files that define the modular structure of the nodes. Crucially, the `ClientNode` contains an unconstrained array of bidirectional gates called `port[]` to support variable topological connections at runtime.
 *   `Network.ned` and `omnetpp.ini`: These files define the overarching network structure and specify runtime configurations.
-*   `ChordAppMsg.msg`: The OMNeT++ language definition file orchestrating the packet structures. It supports three distinct message types: task delegation, result propagation, and gossip broadcast.
+*   `ChordAppMsg.msg`: The OMNeT++ language definition file orchestrating the packet structures. It supports three distinct message types: task delegation (`TASK_MSG`), result propagation (`RESULT_MSG`), and gossip broadcast (`GOSSIP_MSG`), fulfilling the assignment's state machine requirements.
 *   `Coordinator.h` and `Coordinator.cc`: A central class that intervenes during the zero stage of simulation initialization. It reads `topo.txt` and systematically constructs the physical gate connections between nodes using OMNeT++ delay channels to simulate physical linkages.
-*   `ClientNode.h` and `ClientNode.cc`: The core behavioral logic for each peer. This class encapsulates distance-based greedy routing, dataset generation, task subdivision, local processing, result aggregation, and gossip dissemination.
+*   `ClientNode.h` and `ClientNode.cc`: The core behavioral logic for each peer. This class encapsulates dataset generation, dividing tasks into $x$ equal subtasks ($k/x \ge 2$), and generating random subtask ID $i$. It then routes subtask $i$ to client $i \% N$ via CHORD protocols. It computes the local array aggregate (the maximum element) on receipt of a subtask, aggregates partial results back at the initiator, and propagates a formatted Gossip message `<timestamp>:<origin_IP>:<client_ID>` upon completion.
 
 ## 2. System Requirements and Configuration
 
@@ -96,10 +101,11 @@ This project supports **two independent execution modes**. Choose the one approp
 
 **Example output:**
 ```
-Node 0: Starting task...
-Node 7: Received subtask 7
-Node 0: All results received. Maximum = 857
-Gossip disseminated to all nodes
+Node 15 initiating task, splitting 100 elements into 20 parts.
+Node 15 computed local max 897 for subtask 15 from initiator 15
+...
+Task Complete on Node 15. Conclusive Max: 1000
+Node 15 recvd GOSSIP message <0.106713>:<15>:<15>, Local Timestamp: 0.106713, Received From: 15
 Simulation complete.
 ```
 
@@ -222,16 +228,18 @@ Choose your execution mode based on your environment. See [Section 2.1](#21-exec
 - Expected duration: 2-5 seconds
 - **Output file:** `outputfile.txt` (created in project directory)
 
-**Example console output:**
+**Example console/outputfile.txt extract:**
 ```
 Setting up Cmdenv...
-Node 0: Starting task...
-Node 2: Received subtask 2
+Node 15 initiating task, splitting 100 elements into 20 parts.
+Node 15 computed local max 897 for subtask 15 from initiator 15
+Node 15 received result 897 for subtask 15
+Node 0 computed local max 706 for subtask 0 from initiator 15
 ...
-Node 0: All results received. Maximum = 987
-Gossip disseminated
+Task Complete on Node 15. Conclusive Max: 1000
+Node 15 recvd GOSSIP message <0.106713>:<15>:<15>, Local Timestamp: 0.106713, Received From: 15
+Node 0 recvd GOSSIP message <0.116713>:<15>:<15>, Local Timestamp: 0.116713, Received From: 15
 Simulation complete.
-$
 ```
 
 ---
@@ -270,14 +278,21 @@ OMNeT++ will show a menu asking you to choose between Cmdenv and Qtenv. Choose b
 
 ```bash
 cat outputfile.txt
-cat omnetpp.log
 ```
 
 The `outputfile.txt` contains:
-- Subtask assignments and results
-- CHORD routing hops and message flow
-- Gossip message propagation trace
-- Final consolidated results (max element found)
+- Subtask assignments and local max computations
+- Subtask results being received by the initiator
+- Gossip message propagation trace including local timestamp and sender ID
+- Final consolidated results (Conclusive Max element found)
+
+### Step 3.6: Submission Instructions Reminder
+Per assignment guidelines, ensure you zip your code as a single file containing this directory:
+```bash
+# Rename the folder or create the archive directly:
+tar -czvf rollno1-rollno2.tar.gz ChordTaskNetwork/
+```
+Ensure you have updated your names and roll numbers at the top of this `.md` file, and ensure no code is modified after packaging—only topology (`topo.txt`) scaling is allowed during evaluation!
 
 ## 4. Complete Workflow - Copy/Paste Commands
 
