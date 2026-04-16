@@ -12,7 +12,7 @@ This project simulates a fully distributed, Peer-to-Peer network modeled after t
 export OMNETPP_HOME=~/omnetpp-6.0.3 && source $OMNETPP_HOME/setenv
 
 # 2. Navigate to project
-cd ~/Projects/Chord-Task-Network
+cd ~/Projects/ChordTaskNetwork
 
 # 3. Generate topology (first time only)
 python3 generate_topo.py 16
