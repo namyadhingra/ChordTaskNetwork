@@ -9,18 +9,12 @@ This project simulates a fully peer-to-peer network in OMNeT++ inspired by the C
 
 If you want the formal write-up (diagrams + pseudocode), see `report.tex` (compiled output: `report.pdf`).
 
----
 
-## Demo video
+## Demo (GIF preview)
 
-If this repository includes a demo video file, you can view it directly here (GitHub renders the player in most cases):
+GitHub reliably auto-plays animated GIFs in a README, so the demo is shown below as a GIF preview. Click it to open the full MP4:
 
-<video controls width="800" src="results/omnetpp video.mp4">
-	Your browser does not support the video tag.
-	<a href="demo.mp4">Download the demo video</a>.
-</video>
-
-If you are hosting the demo video elsewhere (e.g., Google Drive / YouTube / GitHub Releases), replace the `src` URL above with the hosted link.
+[![Demo video preview](demo.gif)](results/omnetpp%20video.mp4)
 
 ---
 
