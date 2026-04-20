@@ -234,9 +234,12 @@ void ClientNode::handleResultMsg(ChordAppMsg *msg) {
     routeMessage(msg->getDestId(), msg, msg->getSourceId());
 }
 
-void ClientNode::handleGossipMsg(ChordAppMsg *msg)
-{
-    const std::pair<int, double> gossipKey = std::make_pair(msg->getGossipOriginIP(), msg->getGossipTimestamp());
+void ClientNode::handleGossipMsg(ChordAppMsg *msg) {
+    // this function: handles gossip messages and spreads them through the network
+    // 1. checks if we've already seen this gossip (using originIP + timestamp combo as the key)
+    // 2. if it's new, log it and forward to all neighbors (except the one who sent it to us)
+    // 3. once we've heard gossips from all N nodes, we can terminate
+    const pair<int, double> gossipKey = make_pair(msg->getGossipOriginIP(), msg->getGossipTimestamp());
 
     if (receivedGossips.find(gossipKey) != receivedGossips.end()) {
         delete msg;
@@ -278,8 +281,17 @@ void ClientNode::handleGossipMsg(ChordAppMsg *msg)
     }
 }
 
-void ClientNode::handleMessage(cMessage *msg)
-{
+void ClientNode::handleMessage(cMessage *msg) {
+    //main message handler for the node
+    //1. If the node has already terminated (received gossips from all nodes), it ignores any incoming messages and deletes them
+    //2. If the message is a self-message (like the scheduled "startTask"),
+    //   it checks the name of the message and initiates the task if it's the "startTask" message.
+    //3. If the message is not a self-message, it casts it to a ChordAppMsg and checks the message type to determine how to handle it:
+    //   - If  TASK_MSG, it calls handleTaskMsg to process or forward
+    //   - If RESULT_MSG, it calls handleResultMsg to process the result or forward it
+    //   - If GOSSIP_MSG, it calls handleGossipMsg to process the gossip and forward it if it's new
+    //   - If the message type is unrecognized->  deletes the message
+
     if (terminated) {
         delete msg;
         return;
